@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up</title>
+  <link href="style.css" rel="stylesheet"/>
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="bg-about">
+    <div class="login-container">
+      <form>
+        <span class="sign-text">Sign Up</span>
+
+        <label for="email">Email address</label>
+        <input type="email" class="custom-input-login" id="email" name="email" required>
+
+        <label for="password">Password</label>
+        <input type="password" class="custom-input-login" id="password" name="password" required>
+
+        <label for="idade">Date of Birth</label>
+        <input type="date" class="custom-input-login" id="idade" name="idade" required>
+
+        <div class="what-is">  
+          <h4 class="what">What are you?</h4>
+          <div class="section-checkbox">
+            <input type="checkbox" name="estudante" id="estudante" />
+            <label for="estudante">Student</label>
+
+            <input type="checkbox" name="trabalhador" id="trabalhador" />
+            <label for="trabalhador">Worker</label>
+
+            <input type="checkbox" name="empresario" id="empresario" />
+            <label for="empresario">Businessperson</label>
+            <input type="reset" name="reset" id="reset" class="reset-button" value="Reset" />
+          </div>
+        </div>  
+
+        <label for="ano">Age</label>
+        <input type="number" class="custom-input-login" id="ano" name="ano" min="1" max="140" step="1" required>
+
+        <label for="cor">Favorite Color</label>
+        <input type="color" id="cor" name="cor" required>
+
+        <button type="submit" class="send-submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
