@@ -17,7 +17,11 @@
 }
 
 html {
+<<<<<<< HEAD
   height: 100vh;
+=======
+  height: 100%;
+>>>>>>> 7eb55ad (Finalização)
   width: 100%;
   scroll-behavior: smooth;
   background-color: var(--bg-color);
@@ -40,6 +44,10 @@ li {
 
 .navbar {
   display: flex;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7eb55ad (Finalização)
   align-items: center;
   justify-content: space-between; /* Espaça a logo, menu e botões */
   width: 100%;
@@ -828,4 +836,80 @@ input[type="checkbox"]:checked + label::after {
   font-family: 'Poppins', sans-serif;
   font-weight: 500;
   font-size: 14px;
+<<<<<<< HEAD
+=======
+}
+
+.feedback{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 0 50px 0;
+}
+
+.feedback-container {
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--text-color);
+    background-color: #212121;
+    text-align: center;
+}
+
+.feedback-container h2{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  
+}
+
+.text-field {
+  border-radius: 10px;
+  color: #909090;
+  background-color: #282828;
+}
+
+.range-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+input[type="range"] {
+  width: 70%;
+  margin-right: 10px;
+  -webkit-appearance: none;
+  appearance: none;
+  height: 5px;
+  border-radius: 5px;
+  outline: none;
+  cursor: pointer;
+  background: linear-gradient(135deg, var(--main-color), var(--sec-color)); /* Gradiente */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #fff; /* Cor do polegar */
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #fff; /* Cor do polegar */
+  cursor: pointer;
+}
+
+#rating-value {
+  font-size: 1.2rem;
+  color: var(--text-color);
+  font-weight: bold;
+>>>>>>> 7eb55ad (Finalização)
 }
