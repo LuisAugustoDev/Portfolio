@@ -55,13 +55,9 @@ backBtn.addEventListener('click', () => {
 });
 
 // Inicializa mostrando o primeiro passo do formulário
-showFormStep(formStepIndex);
-<<<<<<< HEAD
 });
-=======
 });
 
 function updateRatingValue(value) {
     document.getElementById("rating-value").textContent = value;
 }
->>>>>>> 7eb55ad (Finalização)
