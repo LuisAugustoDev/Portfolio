@@ -17,7 +17,6 @@
 }
 
 html {
-  height: 100vh;
   height: 100%;
   width: 100%;
   scroll-behavior: smooth;
@@ -258,6 +257,7 @@ li {
   display: flex;
   justify-content: space-between; /* Coloca um elemento na esquerda e outro na direita */
   align-items: center; /* Centraliza verticalmente caso haja diferença de altura */
+  
 }
 
 .progress, .shape-right {
@@ -294,6 +294,15 @@ li {
   display: flex;
   flex-direction: row; /* Alinha o texto em coluna */
   align-items: center; /* Centraliza verticalmente */
+}
+
+.fade-in {
+  opacity: 0;  /* Inicialmente invisível */
+  transition: opacity 1s ease-out; /* Transição suave para visibilidade */
+}
+
+.fade-in.visible {
+  opacity: 1; /* Torna o elemento visível */
 }
 
 .section-services {
@@ -360,10 +369,9 @@ li {
   height: 400px;
   width: 250px; /* Tamanho fixo para ambas as divs ficarem uniformes */
   box-sizing: border-box; /* Inclui padding na largura */
-
 }
 
-.android img, .web img {
+.img, .web img {
   width: 64px;
   height: 64px;
   margin-bottom: 15px; /* Espaço entre a imagem e o texto */
