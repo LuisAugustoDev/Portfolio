@@ -23,6 +23,13 @@ html {
   background-color: var(--bg-color);
 }
 
+.home {
+  display: flex;
+  justify-content: center;
+  align-itens: center;
+  flex-direction: column;
+}
+
 li {
   color: var(--text-color);
   text-decoration: none; /* Remove sublinhado padrão */
