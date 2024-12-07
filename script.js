@@ -29,33 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
     window.location.href = 'signup.html';
   });
 
-  const nextBtn = document.getElementById('next-btn');
-  const backBtn = document.getElementById('back-btn');
-  const formSteps = document.querySelectorAll('.form-step');
-  let formStepIndex = 0;
-
-  function showFormStep(index) {
-    formSteps.forEach((step, i) => {
-      step.classList.toggle('form-step-active', i === index);
-    });
-  }
-
-  nextBtn.addEventListener('click', () => {
-    if (formStepIndex < formSteps.length - 1) {
-      formStepIndex++;
-      showFormStep(formStepIndex);
-    }
-  });
-
-  backBtn.addEventListener('click', () => {
-    if (formStepIndex > 0) {
-      formStepIndex--;
-      showFormStep(formStepIndex);
-    }
-  });
-
-});
-
 function updateRatingValue(value) {
   document.getElementById("rating-value").textContent = value;
 }
