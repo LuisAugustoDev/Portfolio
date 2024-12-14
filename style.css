@@ -37,6 +37,9 @@ html {
         flex-direction: column;
         text-align: center;
     }
+  .conteiner-shapes img {
+        max-width: 70%; /* Reduz a largura das imagens em telas menores */
+    }
 }
 
 @media (max-width: 480px) {
@@ -56,6 +59,10 @@ html {
 
     .container, .form-container {
         padding: 10px;
+    }
+
+  .conteiner-shapes img {
+        max-width: 50%; /* Reduz a largura das imagens em telas menores */
     }
 
     .footer-content {
