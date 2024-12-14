@@ -23,6 +23,48 @@ html {
   background-color: var(--bg-color);
 }
 
+@media (max-width: 768px) {
+    .navbar ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .navbar .logar {
+        flex-direction: column;
+    }
+
+    .shine-bg .container {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .navbar img.logo {
+        width: 120px; /* Reduzir o tamanho do logo */
+    }
+
+    .skills-languages img {
+        width: 50px; /* Ajustar tamanho das imagens das habilidades */
+    }
+
+    .container, .form-container {
+        padding: 10px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+
+
 .home {
   display: flex;
   justify-content: center;
